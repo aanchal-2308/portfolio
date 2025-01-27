@@ -23,7 +23,7 @@ function Skills() {
             >
               <div>
                 <i
-                  className={` ${lang?.icon} text-7xl text-gray-800 transition-colors`}
+                  className={` ${lang?.icon} text-5xl lg:text-7xl text-gray-800 transition-colors`}
                 ></i>
               </div>
               {lang?.name}
