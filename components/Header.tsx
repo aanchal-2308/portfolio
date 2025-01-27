@@ -3,13 +3,39 @@
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Menu } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavLinks from "./NavLinks";
 
 export default function Contact() {
   const { toast } = useToast();
   const email = "aanchalgoyal.2308@gmail.com";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (!isMenuOpen) return;
+
+      const target = event.target as Node;
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(target)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   const handleCopy = async () => {
     try {
@@ -63,6 +89,7 @@ export default function Contact() {
           <Button
             variant="ghost"
             className="p-2"
+            ref={buttonRef}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <Menu className="h-5 w-5" />
@@ -72,7 +99,10 @@ export default function Contact() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-14 left-0 w-full bg-white shadow-lg rounded-b-lg p-4 space-y-4 z-50">
+          <div
+            ref={menuRef}
+            className="absolute top-14 left-0 w-full bg-white shadow-lg rounded-b-lg p-4 space-y-4 z-50"
+          >
             <div className="flex items-center justify-between border rounded-full px-2 py-1">
               <span className="text-gray-700 text-xs">{email}</span>
               <Button

@@ -82,3 +82,41 @@ export const projects = [
   // },
   // Add more projects as needed
 ];
+
+export const blogs = [
+  {
+    name: "Optimizing Images Through Cloudinary",
+    description:
+      "Cloudinary is a cloud-based media management platform that provides services such as image and video storage, manipulation, optimization, and delivery. It allows developers to easily manage and deliver media assets to their applications or websites",
+    tags: ["Talk", "React", "Next", "Cloudinary"],
+    link: "https://www.youtube.com/watch?v=3tg-rYyDigc&t=35s",
+  },
+  {
+    name: "Installing Inertia - React in Laravel Project",
+    description:
+      "Let's learn how to install Inertia in a Laravel project with React",
+    tags: ["Blog", "React", "Laravel", "Inertia"],
+    link: "https://geekyants.com/en-gb/blog/installing-inertia---react-in-laravel-project",
+  },
+  {
+    name: "Integrate Payment Gateway - RazorPay with Laravel",
+    tags: ["Blog", "Laravel", "Razorpay", "Payment Gateway "],
+    description:
+      "Learn how to integrate RazorPay in your Laravel 8 application. Read on to know the essential steps for the integration.",
+    link: "https://geekyants.com/en-gb/blog/integrate-payment-gateway---razorpay-with-laravel",
+  },
+  {
+    name: "Why Use Laravel Horizon and How To Set It Up?",
+    tags: ["Blog", "Laravel"],
+    description:
+      "Laravel Horizon is a queue manager that gives you full control over your queues. lt is a wonderful tool for executing and monitoring queue workers.",
+    link: "https://geekyants.com/en-gb/blog/why-use-laravel-horizon-and-how-to-set-it-up",
+  },
+  {
+    name: "10 reasons why you should use Laravel",
+    tags: ["Blog", "Laravel"],
+    description:
+      "Laravel is the most popular framework for 2022 due to its simple, concise code structure and attractive syntax. It also includes adequate documentation that covers the placement of each file and functionality.",
+    link: "https://geekyants.com/en-gb/blog/10-reasons-why-you-should-use-laravel",
+  },
+];
