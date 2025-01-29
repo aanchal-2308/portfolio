@@ -21,6 +21,8 @@ export default function Home() {
               fill
               className="rounded-full object-cover"
               priority
+              placeholder="blur"
+              blurDataURL="/ProfileImg.jpg"
             />
           </div>
 
@@ -36,11 +38,20 @@ export default function Home() {
         </div>
 
         {/* Heading Text */}
-        <div className="text-[32px] sm:text-[40px] lg:text-[50px] w-full sm:w-[70%] lg:w-[50%] leading-[1.2] sm:leading-[1.3] text-center mt-3 font-medium px-4">
+        <div className="text-md sm:text-lg lg:text-2xl w-full sm:w-[70%] lg:w-[50%] leading-[1.2] sm:leading-[1.3] text-center mt-3 font-medium px-4">
           <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-500 bg-clip-text text-transparent">
-            <p>Building scalable</p>
-            <p>systems and impactful</p>
-            <p>digital experiences.</p>
+            {/* <p>Create experiences </p>
+            <p>with React and Next.js,</p>
+            <p>focusing on performance and scalability</p> */}
+            <p className="text-md mt-8 px-10">
+              Building impactful web applications with React, Next.js, focusing
+              on performance and scalability.
+            </p>
+            {/* <p className="text-md mt-2 px-10">
+              {" "}
+              I lead teams, mentor developers, and share knowledge through
+              mentoring and collaboration.
+            </p> */}
           </div>
         </div>
 
