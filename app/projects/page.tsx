@@ -11,6 +11,18 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore my portfolio of web development and software engineering projects",
+  openGraph: {
+    title: "Projects | Aanchal Goyal",
+    description:
+      "Explore my portfolio of web development and software engineering projects",
+  },
+};
 
 function Projects() {
   return (

@@ -10,6 +10,18 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "lucide-react";
 import { blogs } from "@/utils/constants";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blogs & Talks",
+  description:
+    "Technical writings and talks about web development, system design, and software engineering",
+  openGraph: {
+    title: "Blogs & Talks | Aanchal Goyal",
+    description:
+      "Technical writings and talks about web development, system design, and software engineering",
+  },
+};
 
 function Blogs() {
   return (
