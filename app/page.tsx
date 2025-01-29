@@ -1,7 +1,7 @@
 "use client";
 import { SEO } from "@/components/Seo";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRightIcon, ChevronDown, ExternalLink } from "lucide-react";
+import { ArrowUpRightIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -46,33 +46,30 @@ export default function Home() {
 
         {/* Buttons */}
         <div className="mt-8 sm:mt-10 flex gap-2 flex-col sm:flex-row w-full sm:w-auto px-4 sm:px-0">
-          <Button className="rounded-full w-full sm:w-auto">
-            <a
-              href="/skills"
-              className="flex gap-2 items-center justify-center"
-            >
+          <a href="/skills" className="flex gap-2 items-center justify-center">
+            <Button className="rounded-full w-full sm:w-auto">
               Skills
               <ArrowUpRightIcon className="w-4 h-4" />
-            </a>
-          </Button>
-          <Button className="rounded-full w-full sm:w-auto">
-            <a
-              href="/projects"
-              className="flex gap-2 items-center justify-center"
-            >
+            </Button>
+          </a>
+          <a
+            href="/projects"
+            className="flex gap-2 items-center justify-center"
+          >
+            <Button className="rounded-full w-full sm:w-auto">
               Projects
               <ArrowUpRightIcon className="w-4 h-4" />
-            </a>
-          </Button>
-          <Button className="rounded-full w-full sm:w-auto">
-            <a
-              href="/blogs-talks"
-              className="flex gap-2 items-center justify-center"
-            >
+            </Button>
+          </a>
+          <a
+            href="/blogs-talks"
+            className="flex gap-2 items-center justify-center"
+          >
+            <Button className="rounded-full w-full sm:w-auto">
               Blogs & talks
               <ArrowUpRightIcon className="w-4 h-4" />
-            </a>
-          </Button>
+            </Button>
+          </a>
           {/* <button
           onClick={() => scrollDown()}
           className="p-2 hover:bg-gray-100 rounded-full transition-colors cursor-pointer"

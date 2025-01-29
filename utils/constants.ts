@@ -9,7 +9,23 @@ export const socialLinks = [
   },
 ];
 
-export const skills = [
+export const mainSkills = [
+  { name: "TailwindCSS", icon: "devicon-tailwindcss-plain" },
+  { name: "React.js", icon: "devicon-react-original" },
+  { name: "Next.js", icon: "devicon-nextjs-plain" },
+  { name: "Redux", icon: "devicon-redux-original" },
+  { name: "JavaScript", icon: "devicon-javascript-plain" },
+  { name: "Typescript", icon: "devicon-typescript-original" },
+  { name: "Node.js", icon: "devicon-nodejs-plain" },
+  { name: "Nest.js", icon: "devicon-nestjs-plain" },
+  { name: "GraphQL", icon: "devicon-graphql-plain" },
+  { name: "Jest", icon: "devicon-jest-plain" },
+  { name: "CSS", icon: "devicon-css3-plain" },
+  { name: "HTML", icon: "devicon-html5-plain" },
+  { name: "Bootstrap", icon: "devicon-bootstrap-plain" },
+];
+
+export const otherSkills = [
   {
     name: "C",
     icon: "devicon-c-plain",
@@ -17,27 +33,14 @@ export const skills = [
   { name: "C++", icon: "devicon-cplusplus-plain" },
   { name: "Java", icon: "devicon-java-plain" },
   { name: "PHP", icon: "devicon-php-plain" },
-  { name: "CSS", icon: "devicon-css3-plain" },
-  { name: "HTML", icon: "devicon-html5-plain" },
-  { name: "JavaScript", icon: "devicon-javascript-plain" },
-  { name: "Typescript", icon: "devicon-typescript-original" },
-  { name: "Bootstrap", icon: "devicon-bootstrap-plain" },
-  { name: "TailwindCSS", icon: "devicon-tailwindcss-plain" },
-  { name: "React.js", icon: "devicon-react-original" },
-  { name: "Next.js", icon: "devicon-nextjs-plain" },
-  { name: "Redux", icon: "devicon-redux-original" },
-  { name: "Node.js", icon: "devicon-nodejs-plain" },
   { name: "Laravel", icon: "devicon-laravel-plain" },
-  { name: "GraphQL", icon: "devicon-graphql-plain" },
   { name: "Axios", icon: "devicon-axios-plain" },
   { name: "Github", icon: "devicon-github-original" },
   { name: "Github Actions", icon: "devicon-githubactions-plain" },
   { name: "Gitlab", icon: "devicon-gitlab-plain" },
   { name: "JIRA", icon: "devicon-jira-plain" },
   { name: "MySQL", icon: "devicon-mysql-plain" },
-  { name: "Jest", icon: "devicon-jest-plain" },
 ];
-
 export const navItems = [{ name: "Skills" }, { name: "Projects" }];
 
 export const projects = [

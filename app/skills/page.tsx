@@ -1,4 +1,4 @@
-import { skills } from "@/utils/constants";
+import { mainSkills, otherSkills } from "@/utils/constants";
 import { ChevronLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,23 +7,40 @@ import React from "react";
 function Skills() {
   return (
     <div className="w-[80%] mx-auto text-white flex flex-col justify-center items-center text-center align-middle mt-4 ">
-      <div className="flex items-center justify-between w-full mb-8">
-        <h1 className="text-2xl text-gray-800 text-center font-mono flex-grow">
-          Skills
+      <div className="flex items-center justify-between w-full ">
+        <h1 className="text-md text-gray-800 text-center font-mono flex-grow">
+          Main Skills
         </h1>
-        <div className="w-6"></div>
       </div>
 
       <div className="mb-8">
         <div className="flex flex-wrap justify-center">
-          {skills?.map((lang, index) => (
+          {mainSkills?.map((lang, index) => (
             <div
               key={index}
               className="rounded-lg text-black p-4 m-2 text-center transition-transform transform hover:scale-110"
             >
               <div>
                 <i
-                  className={` ${lang?.icon} text-5xl lg:text-7xl text-gray-800 transition-colors`}
+                  className={` ${lang?.icon} text-5xl lg:text-6xl text-gray-800 transition-colors`}
+                ></i>
+              </div>
+              {lang?.name}
+            </div>
+          ))}
+        </div>
+        <h1 className="text-md text-gray-800 text-center mt-5 font-mono flex-grow">
+          Other Skills
+        </h1>
+        <div className="flex flex-wrap justify-center">
+          {otherSkills?.map((lang, index) => (
+            <div
+              key={index}
+              className="rounded-lg text-black p-4 m-2 text-center transition-transform transform hover:scale-110"
+            >
+              <div>
+                <i
+                  className={` ${lang?.icon} text-3xl lg:text-5xl text-gray-800 transition-colors`}
                 ></i>
               </div>
               {lang?.name}
