@@ -1,8 +1,19 @@
-"use client";
 import { SEO } from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRightIcon } from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn more about Aanchal Goyal - Full Stack Developer and Software Engineer",
+  openGraph: {
+    title: "About | Aanchal Goyal",
+    description:
+      "Learn more about Aanchal Goyal - Full Stack Developer and Software Engineer",
+  },
+};
 
 export default function Home() {
   return (
