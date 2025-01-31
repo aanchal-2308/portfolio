@@ -5,6 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Menu } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import NavLinks from "./NavLinks";
+import Link from "next/link";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -71,14 +72,18 @@ export default function Contact() {
               Copy
             </Button>
           </div>
-          <div className="border rounded-full">
+          <Link
+            href="https://drive.google.com/drive/u/1/folders/1quk9PgxSETiufetabxQEp02xmXk0R5bx"
+            target="_blank"
+            className="border rounded-full"
+          >
             <Button
               variant="secondary"
               className="bg-gray-300 py-4 lg:py-6 text-[10px] lg:text-xs font-medium mr-0 m-1 px-4 lg:px-8 rounded-full hover:bg-gray-100"
             >
               CV
             </Button>
-          </div>
+          </Link>
         </div>
         <NavLinks />
       </div>
@@ -113,12 +118,14 @@ export default function Contact() {
                 Copy
               </Button>
             </div>
-            <Button
-              variant="secondary"
-              className="w-full text-[10px] rounded-full"
-            >
-              CV
-            </Button>
+            <Link href="/Aanchal_Goyal_Resume.pdf" target="_blank">
+              <Button
+                variant="secondary"
+                className="w-full text-[10px] rounded-full"
+              >
+                CV
+              </Button>
+            </Link>
           </div>
         )}
       </div>
